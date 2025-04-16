@@ -1,4 +1,3 @@
-
 # data_preparation.py - GRID Corpus işleme
 import os
 import cv2
