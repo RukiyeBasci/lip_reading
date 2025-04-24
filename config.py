@@ -1,11 +1,11 @@
-# config.py - Konfigürasyon Ayarları
 import os
 
 class Config:
     # Veri yolları
-    DATA_ROOT = "./data"
-    GRID_CORPUS_PATH = os.path.join(DATA_ROOT, "grid_corpus")
-    OUTPUT_DATA_PATH = os.path.join(DATA_ROOT, "processed")
+    DATA_PATH = "./data"
+    VIDEO_PATH = os.path.join(DATA_PATH, "videos")
+    ALIGN_PATH = os.path.join(DATA_PATH, "aligns")
+    OUTPUT_VIDEO_PATH = os.path.join(DATA_PATH, "vid_out")
     
     # Model parametreleri
     NUM_CLASSES = 51  # GRID corpus için kelime sayısı
@@ -29,4 +29,3 @@ class Config:
     # Dudak çıkarma marjları (piksel)
     MOUTH_WIDTH_MARGIN = 30
     MOUTH_HEIGHT_MARGIN = 20
-
